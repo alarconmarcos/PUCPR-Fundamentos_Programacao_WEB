@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lançamento de notas</title>
+  <meta charset="utf-8">
+</head>
+<body>
+
+<form method="post">
+  <fieldset id="notas">
+  <legend>Lançamento de notas</legend>
+
+  <table border="0">
+    <tr><td>&nbsp;</td></tr>
+    <tr>
+    <td colspan="6"><label for="idDisciplina"><strong>Selecione a disciplina</strong></label>
+      <select name="disciplina" id="idDisciplina">
+        <option value="1">Introdução à Informática</option>
+        <option value="2">Linguagens de Programação</option>
+        <option value="3">Programação de Computadores</option>
+      </select>
+    </td>
+    </tr>
+
+    <tr><td>&nbsp;</td></tr>
+
+    <tr>
+      <td><label><strong>Nome do aluno</label></td>
+      <td><strong>Prova 1</strong></td>
+      <td><strong>Prova 2</strong></td>
+      <td><strong>Exame</strong></td>
+      <td><strong>Média</strong></td>
+      <td><strong>Faltas</strong></td>
+    </tr>
+
+    <tr>
+      <td><label>Joana da Silva</label></td>
+      <td><input type="number" name="aluno1P1" min="0" max="10" required=""></td>
+      <td><input type="number" name="aluno1P2" min="0" max="10" required=""></td>
+      <td><input type="number" name="aluno1Exame" min="0" max="10"></td>
+      <td><input type="number" name="aluno1Media" readonly=""></td>
+      <td><input type="number" name="aluno1Faltas" min="0" max="16" required=""></td>
+    </tr>
+
+    <tr>
+      <td><label>Maria do Socorro</label></td>
+      <td><input type="number" name="aluno2P1" min="0" max="10" required=""></td>
+      <td><input type="number" name="aluno2P2" min="0" max="10" required=""></td>
+      <td><input type="number" name="aluno2Exame" min="0" max="10"></td>
+      <td><input type="number" name="aluno2Media" readonly=""></td>
+      <td><input type="number" name="aluno2Faltas" min="0" max="16" required=""></td>
+    </tr>
+
+    <tr>
+      <td><label>Pedro Santos</label></td>
+      <td><input type="number" name="aluno3P1" min="0" max="10" required=""></td>
+      <td><input type="number" name="aluno3P2" min="0" max="10" required=""></td>
+      <td><input type="number" name="aluno3Exame" min="0" max="10"></td>
+      <td><input type="number" name="aluno3Media" readonly=""></td>
+      <td><input type="number" name="aluno3Faltas" min="0" max="16" required=""></td>
+    </tr>
+
+    <tr>
+    <td colspan="6"><br />
+    <input type="submit" name="salvar" value="Salvar">
+    <input type="reset" name="limpar" value="Limpar">
+    </td>
+    </tr>
+  </table>
+  </fieldset>
+</form>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Notas de Alunos</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form name="notas" method="post" action="notas.html" autocomplete="on" target="_self" enctype="multipart/form-data" novalidate>
+        
+         <p><h1>LANÇAMENTO DE NOTAS</h1></p>
+
+        <label for="disciplinas">Selecione a disciplina:</label>
+
+        <select name="disciplinas" id="disciplinas">
+          <option value="Introdução à informática">Introdução à informática</option>
+          <option value="Linguagens de Programação">Linguagens de Programação</option>
+          <option value="Programação de Computadores">Programação de Computadores</option>
+        </select>
+        <p></p>
+
+        <table border="1">
+           <thead>
+              <tr>
+                 <th>Nome do aluno</th>
+                 <th>Prova 1</th>
+                 <th>Prova 2</th>
+                 <th>Exame</th>
+                 <th>Média</th>
+                 <th>Faltas</th>
+              </tr>
+           </thead>
+        
+           <tbody>
+              <tr>
+                 <td>Joana da Silva</td>
+                 <td><input type="number" min="0" max="10" required></td>
+                 <td><input type="number" min="0" max="10" required></td>
+                 <td><input type="number" min="0" max="10"></td>
+                 <td><input type="number" readonly=""></td>
+                 <td><input type="number" min="0" max="16"></td>
+              </tr>
+              <tr>
+                <td>Maria do Socorro</td>
+                <td><input type="number" min="0" max="10" required></td>
+                <td><input type="number" min="0" max="10" required></td>
+                <td><input type="number" min="0" max="10"></td>
+                <td><input type="number" readonly=""></td>
+                <td><input type="number" min="0" max="16"></td>
+             </tr>
+             <tr>
+                <td>Pedro Santos</td>
+                <td><input type="number" min="0" max="10" required></td>
+                <td><input type="number" min="0" max="10" required></td>
+                <td><input type="number" min="0" max="10"></td>
+                <td><input type="number" readonly=""></td>
+                <td><input type="number" min="0" max="16"></td>
+             </tr>
+           </tbody>
+        </table>
+        <input type="submit">
+        <input type="reset">
+    </form>
+    </body>
+</html>       
